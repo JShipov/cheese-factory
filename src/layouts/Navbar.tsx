@@ -1,3 +1,6 @@
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import {ReceiptsPage} from "./ReceiptsPage";
+
 export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-orange py-3">
@@ -14,13 +17,13 @@ export const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarDropdown">
                     <ul className="navbar-nav me-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Our products</a>
+                            <Link className="nav-link" to="/products">Our products</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Receipts</a>
+                            <Link className="nav-link" to="/receipts">Receipts</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Contact us</a>
+                            <Link className="nav-link" to="/contact">Contact us</Link>
                         </li>
                     </ul>
                 </div>
