@@ -1,5 +1,5 @@
-import cheeseProduction from '../images/cheese_production.jpg';
-import cheeseWarehouse from '../images/cheese_warehouse.jpg';
+import cheeseProduction from '../../images/cheese_production.jpg';
+import cheeseWarehouse from '../../images/cheese_warehouse.jpg';
 export const AboutUs = () => {
     return (
         <div className="container-fluid pt-5 pb-5" style={{backgroundColor: '#ffd890'}}>

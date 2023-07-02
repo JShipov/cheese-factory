@@ -1,5 +1,5 @@
-import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { useParams, Link } from 'react-router-dom';
 import React from 'react';
 import { recipes } from './ReceiptsPage';
 
@@ -13,9 +13,9 @@ export const ReceiptsDetail = () => {
     }
 
     return (
-        <Container>
-            <h2 className="mb-4">{recipe.title}</h2>
-            <Row>
+        <Container className="my-4">
+            <h2 className="mb-4 text-center">{recipe.title}</h2>
+            <Row className="justify-content-center">
                 <Col md={6}>
                     <Card>
                         <Card.Img variant="top" src={recipe.img} />
@@ -29,6 +29,7 @@ export const ReceiptsDetail = () => {
                             </Card.Text>
                         </Card.Body>
                     </Card>
+                    <Link to="/receipts" className="btn btn-orange mt-3">Back to recipes</Link>
                 </Col>
             </Row>
         </Container>

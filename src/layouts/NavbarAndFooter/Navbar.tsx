@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import {ReceiptsPage} from "./ReceiptsPage";
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-orange py-3">
             <div className="container-fluid">
-                <span className="navbar-brand">Welcome to the home cheese factory</span>
+                <Link className="navbar-brand text-dark" to="/">Welcome to the home cheese factory</Link>
                 <button className="navbar-toggler bg-white"
                         type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown"

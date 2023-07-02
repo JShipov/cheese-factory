@@ -65,6 +65,15 @@
   display: block;
 }
 
+.cheese-item-mobile {
+  padding: 10px;
+}
+
+.cheese-img {
+  width: 100%; /* Чтобы фотографии были одинаковой ширины и подстраивались под ширину экрана */
+}
+
+
 .card {
   height: 100%;
   background-color: #f5f5f5;
@@ -108,3 +117,22 @@
 .recipe-card:hover .recipe-info {
   opacity: 1;
 }
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
